@@ -17,7 +17,7 @@ This repository provides a Scala 3 facade for the Three.js library, enabling the
 Add the following dependency to your `build.sbt`:
 
 ```scala
-libraryDependencies += "org.github.derghust" %%% "threejs-facade" % "0.1.0"
+libraryDependencies += "org.github.tesseractrealm" %%% "threejs-facade" % "0.1.0"
 ``
   
 ## Contributing
