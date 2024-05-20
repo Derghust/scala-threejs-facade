@@ -8,6 +8,6 @@ ThisBuild / scalaVersion := "3.3.3"
 lazy val root = (project in file("."))
   .enablePlugins(ScalaJSPlugin)
   .settings(
-    name := "scalajs-threejs-facade",
-    idePackagePrefix := Some("org.github.derghust")
+    name             := "scala-threejs-facade",
+    idePackagePrefix := Some("org.github.derghust.threejsfacade")
   )
