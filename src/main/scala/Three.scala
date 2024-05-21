@@ -1,14 +1,15 @@
-package org.github.derghust
+package org.tesseractrealm.threejsfacade
+
+import org.tesseractrealm.threejsfacade.core.Object3D
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
 @js.native
-@JSGlobal("THREE")
+@JSImport("three", JSImport.Namespace)
 object Three extends js.Object:
   @js.native
-  class Scene() extends js.Object:
-    def add(obj: Object3D): Unit = js.native
+  class Scene() extends Object3D
 
   @js.native
   class PerspectiveCamera(fov: Double, aspect: Double, near: Double, far: Double) extends js.Object:
@@ -31,9 +32,6 @@ object Three extends js.Object:
   @js.native
   class Mesh(geometry: BoxGeometry, material: MeshBasicMaterial) extends Object3D:
     var rotation: Euler = js.native
-
-  @js.native
-  class Object3D() extends js.Object
 
   @js.native
   class Euler() extends js.Object:
