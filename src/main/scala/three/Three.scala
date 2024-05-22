@@ -1,6 +1,8 @@
 package org.tesseractrealm.threejsfacade
+package three
 
-import org.tesseractrealm.threejsfacade.core.Object3D
+import core.Object3D
+import org.tesseractrealm.threejsfacade.three.math.Euler
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
@@ -26,10 +28,4 @@ object Three extends js.Object:
   class MeshBasicMaterial(parameters: js.Dynamic) extends js.Object
 
   @js.native
-  class Mesh(geometry: BoxGeometry, material: MeshBasicMaterial) extends Object3D:
-    var rotation: Euler = js.native
-
-  @js.native
-  class Euler() extends js.Object:
-    var x: Double = js.native
-    var y: Double = js.native
+  class Mesh(geometry: BoxGeometry, material: MeshBasicMaterial) extends Object3D {}

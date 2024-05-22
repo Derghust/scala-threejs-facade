@@ -1,7 +1,7 @@
 package org.tesseractrealm.threejsfacade
-package camera
+package three.camera
 
-import org.tesseractrealm.threejsfacade.core.Object3D
+import org.tesseractrealm.threejsfacade.three.core.Object3D
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
