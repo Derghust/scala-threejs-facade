@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation.*
 @js.native
 @JSImport("three", JSImport.Namespace)
 class Object3D extends js.Object:
+  var position: js.Dynamic     = js.native
   def add(obj: Object3D): Unit = js.native

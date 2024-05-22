@@ -12,14 +12,10 @@ object Three extends js.Object:
   class Scene() extends Object3D
 
   @js.native
-  class PerspectiveCamera(fov: Double, aspect: Double, near: Double, far: Double) extends js.Object:
-    var position: js.Dynamic = js.native
-
-  @js.native
   class WebGLRenderer() extends js.Object:
     def setSize(width: Double, height: Double): Unit = js.native
 
-    def render(scene: Scene, camera: PerspectiveCamera): Unit = js.native
+    def render(scene: Scene, camera: Object3D): Unit = js.native
 
     val domElement: js.Dynamic = js.native
 

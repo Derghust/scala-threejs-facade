@@ -15,7 +15,7 @@ developers := List(
   Developer(
     id = "derghust",
     name = "Damien Clément",
-    email = "damien.clement@gmail.com",
+    email = "damien.clement.czech@gmail.com",
     url = url("https://tesseract-realm.com/developer/damien-clement")
   )
 )
