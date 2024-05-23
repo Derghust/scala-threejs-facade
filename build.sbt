@@ -20,13 +20,9 @@ developers := List(
   )
 )
 
-publishTo := {
-  val nexus = "http://192.168.50.83:8081/nexus/content/repositories/"
-  if (isSnapshot.value)
-    Some(("snapshots" at nexus + "snapshots").withAllowInsecureProtocol(true))
-  else
-    Some(("releases" at nexus + "releases").withAllowInsecureProtocol(true))
-}
+publishTo := Some(
+  ("Gitea Packages" at "http://192.168.50.83:3000/api/packages/TesseractRealm/maven").withAllowInsecureProtocol(true)
+)
 
 lazy val root = (project in file("."))
   .enablePlugins(ScalaJSPlugin)

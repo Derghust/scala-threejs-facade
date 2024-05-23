@@ -1,0 +1,56 @@
+name: BuildAndRelease
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  test-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java and SBT
+        uses: olafurpg/setup-scala@v11
+
+      - name: Cache SBT Dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.ivy2/cache
+            ~/.sbt
+          key: ${{ runner.os }}-sbt-${{ hashFiles('**/build.sbt') }}
+          restore-keys: |
+            ${{ runner.os }}-sbt-
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run SBT Test
+        run: sbt test
+
+      - name: Publish to Gitea Packages
+        env:
+          CI_USER: ${{ secrets.RUNNER_JOB_USER_NAME }}
+          CI_TOKEN: ${{ secrets.RUNNER_JOB_USER_TOKEN }}
+        run: |
+          mkdir -p /root/.sbt
+          touch /root/.sbt/.credentials
+          file="/root/.sbt/.credentials"
+          
+          cat <<EOF > $file
+          realm=Gitea Package API
+          host=192.168.50.83
+          user=${CI_USER}
+          password=${CI_TOKEN}
+          EOF
+          
+          cat "$file"
+          echo "another echo $file"
+          sbt publish
