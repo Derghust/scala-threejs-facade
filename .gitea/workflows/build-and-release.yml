@@ -54,3 +54,4 @@ jobs:
           cat "$file"
           echo "another echo $file"
           sbt publish
+        continue-on-error: true
