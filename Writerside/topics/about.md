@@ -2,7 +2,11 @@
 
 ## Overview
 
-This repository provides a Scala 3 facade for the Three.js library, enabling the use of Three.js in Scala.js projects. Three.js is a popular JavaScript 3D library that makes WebGL simpler to use. By providing a Scala facade, this project allows developers to leverage the powerful features of Three.js while writing code in Scala.
+This repository provides a Scala 3 facade for the Three.js library, enabling the use of Three.js in Scala.js projects. 
+Three.js is a popular JavaScript 3D library that makes WebGL simpler to use. By providing a Scala facade, 
+this project allows developers to leverage the powerful features of Three.js while writing code in Scala.
+
+Scala source contain documentation from [threejs.org](https://threejs.org/docs/index.html) and **could be outdated**.
 
 ## Features
 
