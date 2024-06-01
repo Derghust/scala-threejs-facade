@@ -1,6 +1,10 @@
 package org.tesseractrealm.threejsfacade
 package three.materials
 
-class MeshBasicMaterial {
+import scala.scalajs.js
+import scala.scalajs.js.annotation.JSImport
 
-}
+@js.native
+@JSImport("three", "MeshBasicMaterial")
+class MeshBasicMaterial extends js.Object:
+  def this(parameters: js.Object) = this()
