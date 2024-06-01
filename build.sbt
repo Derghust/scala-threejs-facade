@@ -1,8 +1,8 @@
 import org.scalajs.sbtplugin.ScalaJSPlugin
 import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._
 
-// Versioning for release MAJOR.MINOR.PATCH, for snapshot MAJOR.MINOR.PATCH-S_NUMBER
-ThisBuild / version      := "0.1.0-S1"
+// Versioning for release THREEJS_VERSION, for snapshot THREEJS_VERSION-S_NUMBER
+ThisBuild / version      := "r165-s1"
 ThisBuild / scalaVersion := "3.3.3"
 
 credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
