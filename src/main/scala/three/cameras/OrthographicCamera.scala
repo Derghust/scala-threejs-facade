@@ -1,5 +1,5 @@
 package org.tesseractrealm.threejsfacade
-package three.camera
+package three.cameras
 
 import org.tesseractrealm.threejsfacade.three.core.Object3D
 
