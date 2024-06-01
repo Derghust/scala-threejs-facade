@@ -18,9 +18,3 @@ object Three extends js.Object:
     def render(scene: Scene, camera: Object3D): Unit = js.native
 
     val domElement: js.Dynamic = js.native
-
-  @js.native
-  class BoxGeometry(width: Double, height: Double, depth: Double) extends js.Object
-
-  @js.native
-  class MeshBasicMaterial(parameters: js.Dynamic) extends js.Object
