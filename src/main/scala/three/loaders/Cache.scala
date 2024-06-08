@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.JSImport
   *     */
 @js.native
 @JSImport("three", "Cache")
-class Cache extends js.Object:
+object Cache extends js.Object:
   /** Whether caching is enabled. Default is false.
     *
     *       */
