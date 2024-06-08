@@ -10,4 +10,5 @@
     <toc-element topic="about.md"/>
     <toc-element topic="Reference.md"/>
     <toc-element topic="How-to.md"/>
+    <toc-element topic="Development.md"/>
 </instance-profile>

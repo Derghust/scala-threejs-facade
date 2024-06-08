@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.*
   *
   * All classes that inherit from [[Object3D]] have an [[Object3D.layers]] property which is an instance of this class.
   *
-  * [[https://threejs.org/docs/index.html#api/en/core/Layers Documentation]]
-  */
+  *     */
 @js.native
 @JSImport("three", "Layers")
 class Layers extends js.Object:

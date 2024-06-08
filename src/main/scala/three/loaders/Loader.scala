@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.JSImport
   *
   * Base class for implementing loaders.
   *
-  * [[https://threejs.org/docs/#api/en/loaders/Loader Documentation]]
-  */
+  *     */
 @js.native
 @JSImport("three", "Loader")
 class Loader extends js.Object:

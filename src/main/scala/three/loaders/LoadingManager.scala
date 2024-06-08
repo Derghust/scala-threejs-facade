@@ -19,15 +19,13 @@ import scala.scalajs.js.annotation.JSImport
   *   TODO
   * }}}
   *
-  * [[https://threejs.org/docs/index.html#api/en/loaders/managers/LoadingManager Documentation]]
-  */
+  *     */
 @js.native
 @JSImport("three", "LoadingManager")
 class LoadingManager extends js.Object:
   /** Creates a new LoadingManager.
     *
-    * [[https://threejs.org/docs/index.html#api/en/loaders/managers/LoadingManager Documentation]]
-    *
+    *       *
     * @param onLoad
     *   (optional) this function will be called when all loaders are done.
     * @param onProgress
@@ -48,16 +46,14 @@ class LoadingManager extends js.Object:
     *
     * By default this is undefined.
     *
-    * [[https://threejs.org/docs/index.html#api/en/loaders/managers/LoadingManager.onStart Documentation]]
-    */
+    *       */
   var onStart: js.Function3[String, Int, Int, Unit] = js.native
 
   /** This function will be called when all loading is completed.
     *
     * By default this is undefined, unless passed in the constructor.
     *
-    * [[https://threejs.org/docs/index.html#api/en/loaders/managers/LoadingManager.onLoad Documentation]]
-    */
+    *       */
   var onLoad: js.Function0[Unit] = js.native
 
   /** This function will be called when an item is complete. The arguments are:
@@ -67,8 +63,7 @@ class LoadingManager extends js.Object:
     *
     * By default this is undefined, unless passed in the constructor.
     *
-    * [[https://threejs.org/docs/index.html#api/en/loaders/managers/LoadingManager.onProgress Documentation]]
-    */
+    *       */
   var onProgress: js.Function3[String, Int, Int, Unit] = js.native
 
   /** This function will be called when any item errors, with the argument:
@@ -76,8 +71,7 @@ class LoadingManager extends js.Object:
     *
     * By default this is undefined, unless passed in the constructor.
     *
-    * [[https://threejs.org/docs/index.html#api/en/loaders/managers/LoadingManager.onError Documentation]]
-    */
+    *       */
   var onError: js.Function1[String, Unit] = js.native
 
   /** Registers a loader with the given regular expression. Can be used to define what loader should be used in order to
