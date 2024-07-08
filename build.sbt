@@ -22,7 +22,7 @@ developers := List(
 )
 
 publishTo := Some(
-  ("Gitea Packages" at "http://192.168.50.83:3000/api/packages/TesseractRealm/maven").withAllowInsecureProtocol(true)
+  ("Gitea Packages" at sys.env.getOrElse("MAVEN_REPO_URL", "https://127.0.0.1:3000/api/packages/TesseractRealm/maven"))
 )
 
 lazy val root = (project in file("."))
