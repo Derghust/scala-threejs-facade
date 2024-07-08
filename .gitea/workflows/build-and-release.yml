@@ -37,8 +37,9 @@ jobs:
 
       - name: Publish to Gitea Packages
         env:
-          CI_USER: ${{ secrets.RUNNER_JOB_USER_NAME }}
-          CI_TOKEN: ${{ secrets.RUNNER_JOB_USER_TOKEN }}
+          CI_USER: ${{ secrets.CI_USER }}
+          CI_TOKEN: ${{ secrets.CI_TOKEN }}
+          CI_GITEA_HOST: ${{ variables.MAVEN_REPO_URL }}
         run: |
           mkdir -p /root/.sbt
           touch /root/.sbt/.credentials
@@ -46,7 +47,7 @@ jobs:
           
           cat <<EOF > $file
           realm=Gitea Package API
-          host=gitea.tesseract-realm.com
+          host=${MAVEN_REPO_URL}
           user=${CI_USER}
           password=${CI_TOKEN}
           EOF
