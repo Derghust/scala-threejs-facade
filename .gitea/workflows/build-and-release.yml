@@ -39,6 +39,7 @@ jobs:
         env:
           CI_USER: ${{ secrets.CI_USER }}
           CI_TOKEN: ${{ secrets.CI_TOKEN }}
+          MAVEN_REPO_HOST: ${{ vars.MAVEN_REPO_HOST }}
           MAVEN_REPO_URL: ${{ vars.MAVEN_REPO_URL }}
         run: |
           mkdir -p /root/.sbt
@@ -47,7 +48,7 @@ jobs:
           
           cat <<EOF > $file
           realm=Gitea Package API
-          host=${MAVEN_REPO_URL}
+          host=${MAVEN_REPO_HOST}
           user=${CI_USER}
           password=${CI_TOKEN}
           EOF
