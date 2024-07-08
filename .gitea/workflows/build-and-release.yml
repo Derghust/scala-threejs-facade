@@ -39,7 +39,7 @@ jobs:
         env:
           CI_USER: ${{ secrets.CI_USER }}
           CI_TOKEN: ${{ secrets.CI_TOKEN }}
-          CI_GITEA_HOST: ${{ vars.MAVEN_REPO_URL }}
+          MAVEN_REPO_URL: ${{ vars.MAVEN_REPO_URL }}
         run: |
           mkdir -p /root/.sbt
           touch /root/.sbt/.credentials

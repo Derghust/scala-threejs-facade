@@ -22,7 +22,7 @@ developers := List(
 )
 
 publishTo := Some(
-  "Gitea Packages" at "https://gitea.tesseract-realm.com/api/packages/TesseractRealm/maven"
+  "Gitea Packages" at sys.env.getOrElse("MAVEN_REPO_URL", "FAIL_ME")
 )
 
 lazy val root = (project in file("."))
