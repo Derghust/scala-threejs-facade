@@ -2,6 +2,7 @@ package org.tesseractrealm.threejsfacade
 package three.materials
 
 import org.tesseractrealm.threejsfacade.three.math.Color
+import org.tesseractrealm.threejsfacade.three.textures.Texture
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSImport
@@ -16,6 +17,5 @@ class SpriteMaterial extends Material:
   var fog: Boolean              = js.native
   var isSpriteMaterial: Boolean = js.native
   var map: Texture              = js.native
-  var rotation: Radians         = js.native
-  var sizeAttenuation: Boolean  = js.native
-  var transparent: Boolean      = js.native
+//  var rotation: Radians         = js.native
+  var sizeAttenuation: Boolean = js.native

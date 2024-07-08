@@ -63,7 +63,7 @@ class Material extends EventDispatcher:
   var visible: Boolean              = js.native
   var userData: js.Object           = js.native
 
-  def clone(): Material                                              = js.native
+  override def clone(): Material                                     = js.native
   def copy(material: Material): Material                             = js.native
   def dispose(): Unit                                                = js.native
   def onBeforeCompile(shader: Shader, renderer: WebGLRenderer): Unit = js.native
