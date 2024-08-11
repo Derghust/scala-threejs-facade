@@ -26,18 +26,8 @@ Add the following dependency to your `build.sbt`:
 libraryDependencies += "org.github.tesseractrealm" %%% "threejs-facade" % "r165"
 ```
   
-## Contributing
+## [Contributing](docs/Contribution.md)
 
-Contributions are welcome! Please feel free to submit a pull request or 
-open an issue if you encounter any problems or have suggestions for improvements.
-
-### Running Tests
-
-To run the tests, use the following command:
-
-```bash
-sbt test
-```
 
 ## License
 
