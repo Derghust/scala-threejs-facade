@@ -8,18 +8,9 @@ ThisBuild / scalaVersion := "3.3.3"
 credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
 
 publishMavenStyle := true
-organization      := "org.tesseractrealm"
 description       := "Scala threeJS facade"
 homepage          := Some(url("https://tesseract-realm.com"))
 licenses += ("MIT", url("https://opensource.org/license/mit"))
-developers := List(
-  Developer(
-    id = "derghust",
-    name = "Damien Clément",
-    email = "damien.clement.czech@gmail.com",
-    url = url("https://tesseract-realm.com/developer/damien-clement")
-  )
-)
 
 publishTo := Some(
   "Gitea Packages" at sys.env.getOrElse("MAVEN_REPO_URL", "FAIL_ME")
