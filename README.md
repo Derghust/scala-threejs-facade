@@ -1,12 +1,14 @@
 # Three.js Facade for Scala 3 / Scala.js
 
+This project repository is still in early development.
+
 ## Overview
 
 This repository provides a Scala 3 facade for the Three.js library, enabling the use of Three.js in Scala.js projects. 
-Three.js is a popular JavaScript 3D library that makes WebGL simpler to use. By providing a Scala facade, 
+Three.js is a popular JavaScript 3D library that simplifies the use of WebGL. By providing a Scala facade, 
 this project allows developers to leverage the powerful features of Three.js while writing code in Scala.
 
-Scala source contain documentation from [threejs.org](https://threejs.org/docs/index.html) and **could be outdated**.
+The Scala source contains documentation from [threejs.org](https://threejs.org/docs/index.html) and **may be outdated**.
 
 ## Features
 
@@ -21,7 +23,7 @@ Scala source contain documentation from [threejs.org](https://threejs.org/docs/i
 Add the following dependency to your `build.sbt`:
 
 ```scala
-libraryDependencies += "org.github.tesseractrealm" %%% "threejs-facade" % "0.1.0"
+libraryDependencies += "org.github.tesseractrealm" %%% "threejs-facade" % "r165"
 ```
   
 ## Contributing
