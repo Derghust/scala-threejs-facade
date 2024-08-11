@@ -22,7 +22,7 @@ Add the following dependency to your `build.sbt`:
 
 ```scala
 libraryDependencies += "org.github.tesseractrealm" %%% "threejs-facade" % "0.1.0"
-``
+```
   
 ## Contributing
 
